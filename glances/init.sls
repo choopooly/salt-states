@@ -61,7 +61,7 @@ glances_requirements:
     - user: root
     - group: root
     - mode: 440
-    - source: file:///root/test/requirements.jinja2
+    - source: salt://glances/requirements.jinja2
     - require:
       - virtualenv: glances
 
