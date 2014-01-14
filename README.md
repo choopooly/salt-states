@@ -1,4 +1,5 @@
-salt-states
-===========
+# Saltstack states
 
-saltstack states
+See http://www.saltstack.com for more details.
+
+
