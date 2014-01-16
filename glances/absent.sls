@@ -33,4 +33,3 @@ Maintainer: Nicolas Plessis <choopooly@gmail.com>
 /usr/local/bin/glances:
   file:
     - absent
--#}
