@@ -26,7 +26,6 @@ Author: Nicolas Plessis <niplessis@gmail.com>
 Maintainer: Nicolas Plessis <niplessis@gmail.com>
 -#}
 
-{% set registry = pillar['docker_address'] %}
 {% set env = salt['pillar.get']('docker-registry:environment', False) %}
 
 include:
