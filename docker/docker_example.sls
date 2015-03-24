@@ -2,11 +2,17 @@
 {% set image = 'nginx' %}
 {% set tag = 'latest' %}
 
+include:
+  - docker
+
 {{ image }}_image:
   docker:
     - pulled
     - name: {{ registry }}/{{ image }}:{{ tag }}
     - force: True
+    - require:
+      - pkg: lxc-docker
+      - pip: docker-py
 
 {{ image }}_stop_if_old:
   cmd:
